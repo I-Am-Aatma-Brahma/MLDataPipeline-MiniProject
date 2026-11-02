@@ -1,0 +1,5 @@
+requests
+pandas
+pyarrow
+psycopg2-binary
+pytest
