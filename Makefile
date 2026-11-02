@@ -18,7 +18,7 @@ init:
 up: init
 	$(COMPOSE) up -d --build
 	@echo ""
-	@echo "Airflow UI : http://localhost:8080  (login with AIRFLOW_ADMIN_USER / AIRFLOW_ADMIN_PASSWORD from .env, default admin / admin)"
+	@echo "Airflow UI : http://localhost:8082  (login with AIRFLOW_ADMIN_USER / AIRFLOW_ADMIN_PASSWORD from .env, default admin / admin)"
 	@echo "Dashboard  : http://localhost:8501"
 	@echo "Warehouse  : localhost:5434  (user/password/db from .env)"
 

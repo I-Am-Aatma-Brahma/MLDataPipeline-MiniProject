@@ -51,7 +51,7 @@ tab_weather, tab_quality, tab_health = st.tabs(["🌡️ Weather insights", "✅
 
 with tab_weather:
     if daily.empty:
-        st.info("No data yet. Trigger the `weather_pipeline` DAG in Airflow (http://localhost:8080) and refresh this page.")
+        st.info("No data yet. Trigger the `weather_pipeline` DAG in Airflow (http://localhost:8082) and refresh this page.")
     else:
         for col in NUMERIC_DAILY:
             daily[col] = pd.to_numeric(daily[col])
