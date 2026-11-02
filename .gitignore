@@ -1,32 +1,11 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Virtual environments
-.venv/
-venv/
-env/
-
-# Environment variables and secrets
 .env
-.env.*
-!.env.example
-
-# Jupyter
-.ipynb_checkpoints/
-
-# IDE and editor files
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Common generated ML artifacts
-mlruns/
-wandb/
+logs/*
+!logs/.gitkeep
+data/raw/*
+!data/raw/.gitkeep
+data/silver/*
+!data/silver/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
