@@ -3,3 +3,5 @@ pandas
 pyarrow
 psycopg2-binary
 pytest
+opentelemetry-distro
+opentelemetry-exporter-otlp
