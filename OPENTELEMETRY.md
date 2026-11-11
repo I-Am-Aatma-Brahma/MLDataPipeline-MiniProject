@@ -5,7 +5,6 @@ sampling: failed and slow requests are always kept, healthy ones are sampled.
 
 ## What this pull request changed
 
-- `requirements.txt`: adds opentelemetry-distro and opentelemetry-exporter-otlp
 - `OPENTELEMETRY.md`: this guide
 
 The OpenTelemetry distro traces Django, Flask, FastAPI, requests, database clients and more without code changes. Run `opentelemetry-bootstrap -a install` once after installing dependencies, then start your app with `opentelemetry-instrument <your usual command>`.
@@ -16,7 +15,7 @@ Set these environment variables where the app runs (Render, Vercel, Docker, your
 Get the ingest key from the project's **Settings** page in the dashboard. Never commit it.
 
 ```
-OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4318
+OTEL_EXPORTER_OTLP_ENDPOINT=https://tracepipe-collector.onrender.com
 OTEL_EXPORTER_OTLP_HEADERS=x-api-key=<your ingest key from the dashboard>
 OTEL_SERVICE_NAME=mldatapipeline-miniproject
 OTEL_TRACES_EXPORTER=otlp
